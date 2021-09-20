@@ -1,5 +1,5 @@
 import requests
-from constants import *
+from key import *
 
 def getInfoBusStation(atcoCode):
     r = requests.get(f'https://transportapi.com/v3/uk/bus/stop/{atcoCode}/live.json?app_id={appId}&app_key={key}&group=no&limit=5&nextbuses=yes')
