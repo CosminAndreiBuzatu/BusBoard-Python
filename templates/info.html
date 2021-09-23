@@ -4,7 +4,11 @@
 <div class="container body-content">
     <h2>Bus Information</h2>
     <div>
-        <p>You entered postcode <span>{{ postcode }}</span></p>
+        <p>You entered postcode <span>{{ postcode.upper() }}</span></p>
     </div>
+    {% for item in web %}
+    <div><p>{{ item }}<br></p></div>
+    <div></div>
+    {% endfor %}
 </div>
 {% endblock %}
